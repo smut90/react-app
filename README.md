@@ -34,4 +34,4 @@ Make an api call to a backend service to mimic the process of
 consuming login information from Google oAuth component.
 
 Get changes by checking out to branch step4
-`git checkout step3`
+`git checkout step4`
