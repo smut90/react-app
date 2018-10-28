@@ -1,4 +1,5 @@
 import React from 'react';
+import Google from './Google'
 
 export default class App extends React.Component {
 
@@ -6,9 +7,9 @@ export default class App extends React.Component {
         return (
             <div>
                 <h1>Hello World</h1>
-                <p>This is my first react component</p>
+                <p>Let's login!!</p>
+                <Google />
             </div>
         );
     }
-
 }
