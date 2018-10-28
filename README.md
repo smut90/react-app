@@ -11,3 +11,19 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Create basic framework using create-react.
 `npx create-react-app react-app`
+
+## Step 2
+
+Add our first react component
+
+Get changes by checking out to branch step2
+`git checkout step2`
+
+## Step 3
+
+- Add google login component.
+- Install Google oAUth Sign-in / Log-in Component for React
+`npm i react-google-login`
+
+Get changes by checking out to branch step3
+`git checkout step3`
