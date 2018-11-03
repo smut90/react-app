@@ -1,9 +1,11 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import { GoogleLogin } from 'react-google-login';
-import { GoogleLogout } from 'react-google-login';
-import { validateUser } from './Service'
+import { validateUser } from '../Service'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGoogle } from '@fortawesome/free-brands-svg-icons'
 
-export default class Google extends React.Component {
+export default class Login extends React.Component {
 
     render() {
         const onLoginSuccess = (response) => {
@@ -11,7 +13,7 @@ export default class Google extends React.Component {
             let credentials = {
                 firstName: response.w3.ofa,
                 lastName: response.w3.wea
-            }
+            };
             validateUser(credentials);
         };
 
@@ -19,23 +21,18 @@ export default class Google extends React.Component {
             console.log("Login Failed", response);
         };
 
-        const onLogoutSuccess = () => {
-            console.log("Successfully logged out!");
-        };
-
         return (
             <div>
                 <GoogleLogin
-                    clientId="257420465530-9g5ic31549qpa1lgunk2heug8bcv042t.apps.googleusercontent.com"
-                    buttonText="Login"
+                    style={{}}
+                    disabledStyle={true}
+                    className="btn btn-danger btn-block"
+                    clientId="REPLACE-WITH-YOUR-REGISTERED-APP-ID"
                     onSuccess={onLoginSuccess}
                     onFailure={onLoginFailure}
-                />
-                <GoogleLogout
-                    buttonText="Logout"
-                    onLogoutSuccess={onLogoutSuccess}
                 >
-                </GoogleLogout>
+                    <FontAwesomeIcon icon={faGoogle} fixedWidth /> Sign in with <b>Google</b>
+                </GoogleLogin>
             </div>
         );
     }
