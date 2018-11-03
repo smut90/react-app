@@ -35,3 +35,10 @@ consuming login information from Google oAuth component.
 
 Get changes by checking out to branch step4
 `git checkout step4`
+
+## Step 5
+
+Make our react app visually appealing by including bootstrap styling.
+
+Get changes by checking out to branch step5
+`git checkout step5`
