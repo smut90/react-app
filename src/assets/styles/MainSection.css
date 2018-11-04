@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200");
+
+.wrapper{
+    background-color: #111;
+}
+
+.common {
+    color: #efefef;
+    background-color: #111;
+    font-family: Montserrat;
+}
+
+.pt-5,
+.py-5 {
+    padding-top: 4.5rem !important; }
+
+.mt-5,
+.my-5 {
+    margin-top: 4.5rem !important; }
+
+@media (min-width: 992px) {
+    .text-lg-left {
+        text-align: left !important; }
+    .text-lg-right {
+        text-align: right !important; }
+    .text-lg-center {
+        text-align: center !important; } }
+
+.display-2 {
+    font-size: 5.5rem;
+    font-weight: 300;
+    line-height: 1.2; }
+
+.lead {
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto; }
+
+.d-block {
+    display: block !important; }
+
+.ml-auto,
+.mx-auto {
+    margin-left: auto !important; }
+
+.pb-4,
+.py-4 {
+    padding-bottom: 2.25rem !important; }
+
+@media (min-width: 768px) {
+    .text-md-left {
+        text-align: left !important; }
+    .text-md-right {
+        text-align: right !important; }
+    .text-md-center {
+        text-align: center !important; } }
+
+.mb-5,
+.my-5 {
+    margin-bottom: 4.5rem !important; }
+
+.text-primary {
+    color: #f1cd31 !important; }
+
+a.text-primary:hover, a.text-primary:focus {
+    color: #e0b90f !important; }
+
+text-primary
+
+.text-muted {
+    color: #6c757d !important; }
+
+.d-none {
+    display: none !important; }
+
+@media (min-width: 992px) {
+    .d-lg-none {
+        display: none !important; }
+    .d-lg-inline {
+        display: inline !important; }
+    .d-lg-inline-block {
+        display: inline-block !important; }
+    .d-lg-block {
+        display: block !important; }
+    .d-lg-table {
+        display: table !important; }
+    .d-lg-table-row {
+        display: table-row !important; }
+    .d-lg-table-cell {
+        display: table-cell !important; }
+    .d-lg-flex {
+        display: flex !important; }
+    .d-lg-inline-flex {
+        display: inline-flex !important; } }
+
+.animate-in-down {
+    transition: all 1.3s ease-out;
+    position: relative;
+    opacity: 1;
+    top: 0px; }
+.animate-in-down.out-of-viewport {
+    top: 40px;
+    opacity: 0; }
+
